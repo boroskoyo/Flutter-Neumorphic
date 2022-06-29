@@ -35,7 +35,7 @@ class __PageState extends State<_Page> {
   String firstName = "";
   String lastName = "";
   double age = 12;
-  Gender gender;
+  late Gender gender;
   Set<String> rides = Set();
 
   @override
@@ -181,7 +181,7 @@ class _AgeField extends StatelessWidget {
   final double age;
   final ValueChanged<double> onChanged;
 
-  _AgeField({@required this.age, this.onChanged});
+  _AgeField({required this.age, required this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -230,14 +230,15 @@ class _TextField extends StatefulWidget {
 
   final ValueChanged<String> onChanged;
 
-  _TextField({@required this.label, @required this.hint, this.onChanged});
+  _TextField(
+      {required this.label, required this.hint, required this.onChanged});
 
   @override
   __TextFieldState createState() => __TextFieldState();
 }
 
 class __TextFieldState extends State<_TextField> {
-  TextEditingController _controller;
+  late TextEditingController _controller;
 
   @override
   void initState() {
@@ -283,8 +284,8 @@ class _GenderField extends StatelessWidget {
   final ValueChanged<Gender> onChanged;
 
   const _GenderField({
-    @required this.gender,
-    @required this.onChanged,
+    required this.gender,
+    required this.onChanged,
   });
 
   @override
@@ -313,7 +314,7 @@ class _GenderField extends StatelessWidget {
               ),
               value: Gender.MALE,
               child: Icon(Icons.account_box),
-              onChanged: (value) => this.onChanged(value),
+              onChanged: (value) => this.onChanged(value!),
             ),
             SizedBox(width: 12),
             NeumorphicRadio(
@@ -324,7 +325,7 @@ class _GenderField extends StatelessWidget {
               ),
               value: Gender.FEMALE,
               child: Icon(Icons.pregnant_woman),
-              onChanged: (value) => this.onChanged(value),
+              onChanged: (value) => this.onChanged(value!),
             ),
             SizedBox(width: 12),
             NeumorphicRadio(
@@ -335,7 +336,7 @@ class _GenderField extends StatelessWidget {
               ),
               value: Gender.NON_BINARY,
               child: Icon(Icons.supervised_user_circle),
-              onChanged: (value) => this.onChanged(value),
+              onChanged: (value) => this.onChanged(value!),
             ),
             SizedBox(
               width: 18,

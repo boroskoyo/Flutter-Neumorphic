@@ -7,7 +7,7 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'dart:math' show Random;
 
 class ProgressWidgetPage extends StatefulWidget {
-  ProgressWidgetPage({Key key}) : super(key: key);
+  ProgressWidgetPage({Key? key}) : super(key: key);
 
   @override
   createState() => _WidgetPageState();
@@ -42,6 +42,7 @@ class _PageState extends State<_Page> {
       child: Scaffold(
         appBar: TopBar(
           title: "Progress",
+          actions: [],
         ),
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
@@ -110,7 +111,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
@@ -323,7 +324,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
@@ -384,7 +385,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {

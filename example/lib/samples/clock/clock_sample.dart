@@ -40,7 +40,9 @@ class _ClockFirstPageState extends State<_ClockFirstPage> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 9.0),
-            child: TopBar(),
+            child: TopBar(
+              actions: [],
+            ),
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -229,16 +231,16 @@ class NeumorphicClock extends StatelessWidget {
   }
 
   Widget _buildLine(
-      {BuildContext context,
-      double angle,
-      double width,
+      {BuildContext? context,
+      double? angle,
+      double? width,
       double height = 6,
-      Color color}) {
+      Color? color}) {
     return Transform.rotate(
-      angle: angle,
+      angle: angle!,
       child: Center(
         child: Padding(
-          padding: EdgeInsets.only(left: width),
+          padding: EdgeInsets.only(left: width!),
           child: Neumorphic(
             style: NeumorphicStyle(
               depth: 20,
