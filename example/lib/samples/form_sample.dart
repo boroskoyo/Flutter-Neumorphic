@@ -35,7 +35,7 @@ class __PageState extends State<_Page> {
   String firstName = "";
   String lastName = "";
   double age = 12;
-  late Gender gender;
+  late Gender gender = Gender.NON_BINARY;
   Set<String> rides = Set();
 
   @override

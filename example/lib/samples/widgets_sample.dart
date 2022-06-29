@@ -9,7 +9,7 @@ class WidgetsSample extends StatefulWidget {
 }
 
 class _ContainersListPageState extends State<WidgetsSample> {
-  late int _groupValue;
+  int _groupValue = 1;
   bool _switchConcaveEnabled = false;
   bool _switchConvexEnabled = false;
   bool _switchFlatEnabled = false;
