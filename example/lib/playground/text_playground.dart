@@ -210,10 +210,8 @@ class __PageState extends State<_Page> {
     switch (selectedConfiguratorIndex) {
       case 0:
         return styleCustomizer();
-        break;
       case 1:
         return elementCustomizer();
-        break;
     }
     return null;
   }

@@ -215,13 +215,10 @@ class __PageState extends State<_Page> {
     switch (selectedConfiguratorIndex) {
       case 0:
         return styleCustomizer();
-        break;
       case 1:
         return elementCustomizer();
-        break;
       case 2:
         return borderCustomizer();
-        break;
     }
     return null;
   }
@@ -330,10 +327,7 @@ class __PageState extends State<_Page> {
       child: SizedBox(
         height: height,
         width: width,
-        child: Container(
-          //color: Colors.blue,
-          child: Center(child: Text("")),
-        ),
+        child: Center(child: Text("")),
       ),
     );
   }

@@ -83,12 +83,6 @@ class __PageState extends State<_Page> {
   }
 
   Widget _configurators() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
-    final Color buttonInnactiveColor = Colors.white;
-
-    final Color textActiveColor = Colors.white;
-    final Color textInactiveColor = Colors.black.withOpacity(0.3);
-
     return Column(
       children: <Widget>[
         styleCustomizer(),
@@ -134,12 +128,8 @@ class __PageState extends State<_Page> {
       child: SizedBox(
         height: height,
         width: width,
-        child: haveNeumorphicChild
-            ? neumorphicChild()
-            : Container(
-                //color: Colors.blue,
-                child: Center(child: Text("")),
-              ),
+        child:
+            haveNeumorphicChild ? neumorphicChild() : Center(child: Text("")),
       ),
     );
   }
@@ -244,7 +234,7 @@ class __PageState extends State<_Page> {
   }
 
   Widget shapeWidget() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     final Color buttonInnactiveColor = Colors.white;
 
     final Color iconActiveColor = Colors.white;

@@ -72,7 +72,7 @@ class __PageState extends State<_Page> {
               padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 8.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Theme.of(context).accentColor,
+                    backgroundColor: Theme.of(context).colorScheme.secondary,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12))),
                 child: const Text(
@@ -105,7 +105,7 @@ class __PageState extends State<_Page> {
   int selectedConfiguratorIndex = 0;
 
   Widget _configurators() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     const Color buttonInnactiveColor = Colors.white;
 
     const Color textActiveColor = Colors.white;
@@ -214,13 +214,10 @@ class __PageState extends State<_Page> {
     switch (selectedConfiguratorIndex) {
       case 0:
         return styleCustomizer();
-        break;
       case 1:
         return elementCustomizer();
-        break;
       case 2:
         return childCustomizer();
-        break;
     }
     return null;
   }
@@ -313,10 +310,7 @@ class __PageState extends State<_Page> {
         width: width,
         child: haveNeumorphicChild
             ? neumorphicChild()
-            : Container(
-                //color: Colors.blue,
-                child: const Center(child: Text("")),
-              ),
+            : const Center(child: Text("")),
       ),
     );
   }
@@ -628,7 +622,7 @@ class __PageState extends State<_Page> {
   }
 
   Widget boxshapeWidget() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     const Color buttonInnactiveColor = Colors.white;
 
     const Color textActiveColor = Colors.white;
@@ -770,7 +764,7 @@ class __PageState extends State<_Page> {
   }
 
   Widget shapeWidget() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     const Color buttonInnactiveColor = Colors.white;
 
     const Color iconActiveColor = Colors.white;
