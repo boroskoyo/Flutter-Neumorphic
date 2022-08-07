@@ -107,7 +107,7 @@ NeumorphicRadio(
             value: 1991,
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as int;
               });
             },
             padding: EdgeInsets.all(8.0),
@@ -119,7 +119,7 @@ NeumorphicRadio(
             groupValue: groupValue,
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as int;
               });
             },
             padding: EdgeInsets.all(8.0),
@@ -131,7 +131,7 @@ NeumorphicRadio(
             value: 2012,
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as int;
               });
             },
             padding: EdgeInsets.all(8.0),
@@ -197,7 +197,7 @@ NeumorphicRadio(
             value: "A",
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as String;
               });
             },
             padding: EdgeInsets.all(18.0),
@@ -212,7 +212,7 @@ NeumorphicRadio(
             groupValue: groupValue,
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as String;
               });
             },
             padding: EdgeInsets.all(18.0),
@@ -227,7 +227,7 @@ NeumorphicRadio(
             value: "C",
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as String;
               });
             },
             padding: EdgeInsets.all(18.0),
@@ -274,7 +274,7 @@ class _EnabledDisabledWidgetState extends State<_EnabledDisabledWidget> {
             child: Text("First"),
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as int;
               });
             },
           ),
@@ -292,7 +292,7 @@ class _EnabledDisabledWidgetState extends State<_EnabledDisabledWidget> {
             child: Text("Second"),
             onChanged: (value) {
               setState(() {
-                groupValue = value!;
+                groupValue = value! as int;
               });
             },
           ),

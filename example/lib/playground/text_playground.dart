@@ -92,7 +92,7 @@ class __PageState extends State<_Page> {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12)),
-                      backgroundColor: Theme.of(context).colorScheme.secondary,
+                      // backgroundColor: Theme.of(context).colorScheme.secondary,
                     ),
                     child: Text(
                       "back",
@@ -150,9 +150,9 @@ class __PageState extends State<_Page> {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12)),
-                      backgroundColor: selectedConfiguratorIndex == 0
-                          ? buttonActiveColor
-                          : buttonInnactiveColor,
+                      // backgroundColor: selectedConfiguratorIndex == 0
+                      //     ? buttonActiveColor
+                      //     : buttonInnactiveColor,
                     ),
                     child: Text(
                       "Style",
@@ -178,9 +178,9 @@ class __PageState extends State<_Page> {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12)),
-                      backgroundColor: selectedConfiguratorIndex == 1
-                          ? buttonActiveColor
-                          : buttonInnactiveColor,
+                      // backgroundColor: selectedConfiguratorIndex == 1
+                      //     ? buttonActiveColor
+                      //     : buttonInnactiveColor,
                     ),
                     child: Text(
                       "Element",
@@ -257,9 +257,9 @@ class __PageState extends State<_Page> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                backgroundColor: shape == NeumorphicShape.concave
-                    ? buttonActiveColor
-                    : buttonInnactiveColor,
+                // backgroundColor: shape == NeumorphicShape.concave
+                //     ? buttonActiveColor
+                //     : buttonInnactiveColor,
               ),
               onPressed: () {
                 setState(() {
@@ -280,9 +280,9 @@ class __PageState extends State<_Page> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                backgroundColor: shape == NeumorphicShape.convex
-                    ? buttonActiveColor
-                    : buttonInnactiveColor,
+                // backgroundColor: shape == NeumorphicShape.convex
+                //     ? buttonActiveColor
+                //     : buttonInnactiveColor,
               ),
               onPressed: () {
                 setState(() {
@@ -303,9 +303,9 @@ class __PageState extends State<_Page> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                backgroundColor: shape == NeumorphicShape.flat
-                    ? buttonActiveColor
-                    : buttonInnactiveColor,
+                // backgroundColor: shape == NeumorphicShape.flat
+                //     ? buttonActiveColor
+                //     : buttonInnactiveColor,
               ),
               onPressed: () {
                 setState(() {

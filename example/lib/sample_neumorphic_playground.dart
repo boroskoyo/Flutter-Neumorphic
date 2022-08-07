@@ -250,9 +250,9 @@ class __PageState extends State<_Page> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                backgroundColor: shape == NeumorphicShape.concave
-                    ? buttonActiveColor
-                    : buttonInnactiveColor,
+                // backgroundColor: shape == NeumorphicShape.concave
+                //     ? buttonActiveColor
+                //     : buttonInnactiveColor,
               ),
               onPressed: () {
                 setState(() {
@@ -273,9 +273,9 @@ class __PageState extends State<_Page> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                backgroundColor: shape == NeumorphicShape.convex
-                    ? buttonActiveColor
-                    : buttonInnactiveColor,
+                // backgroundColor: shape == NeumorphicShape.convex
+                //     ? buttonActiveColor
+                //     : buttonInnactiveColor,
               ),
               onPressed: () {
                 setState(() {
@@ -296,9 +296,9 @@ class __PageState extends State<_Page> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                backgroundColor: shape == NeumorphicShape.flat
-                    ? buttonActiveColor
-                    : buttonInnactiveColor,
+                // backgroundColor: shape == NeumorphicShape.flat
+                //     ? buttonActiveColor
+                //     : buttonInnactiveColor,
               ),
               onPressed: () {
                 setState(() {
