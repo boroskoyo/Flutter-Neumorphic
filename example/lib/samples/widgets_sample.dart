@@ -124,7 +124,7 @@ class _ContainersListPageState extends State<WidgetsSample> {
           groupValue: _groupValue,
           onChanged: (value) {
             setState(() {
-              _groupValue = value!;
+              _groupValue = value! as int;
             });
           },
         ),
@@ -144,7 +144,7 @@ class _ContainersListPageState extends State<WidgetsSample> {
           groupValue: _groupValue,
           onChanged: (value) {
             setState(() {
-              _groupValue = value!;
+              _groupValue = value! as int;
             });
           },
         ),
@@ -164,7 +164,7 @@ class _ContainersListPageState extends State<WidgetsSample> {
           groupValue: _groupValue,
           onChanged: (value) {
             setState(() {
-              _groupValue = value!;
+              _groupValue = value! as int;
             });
           },
         ),

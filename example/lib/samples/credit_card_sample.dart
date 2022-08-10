@@ -324,7 +324,7 @@ class __PageContentState extends State<_PageContent> {
             value: 0,
             onChanged: (value) {
               setState(() {
-                _dotIndex = value!;
+                _dotIndex = value! as int;
               });
             },
             style: NeumorphicRadioStyle(
@@ -344,7 +344,7 @@ class __PageContentState extends State<_PageContent> {
             value: 1,
             onChanged: (value) {
               setState(() {
-                _dotIndex = value!;
+                _dotIndex = value! as int;
               });
             },
             style: NeumorphicRadioStyle(
@@ -364,7 +364,7 @@ class __PageContentState extends State<_PageContent> {
             value: 2,
             onChanged: (value) {
               setState(() {
-                _dotIndex = value!;
+                _dotIndex = value! as int;
               });
             },
             style: NeumorphicRadioStyle(
