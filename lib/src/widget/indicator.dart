@@ -16,6 +16,7 @@ import 'container.dart';
 ///
 class IndicatorStyle {
   //final double borderRadius;
+  final Color? color;
   final double depth;
   final bool? disableDepth;
   final Color? accent;
@@ -26,6 +27,7 @@ class IndicatorStyle {
   final AlignmentGeometry? gradientEnd;
 
   const IndicatorStyle({
+    this.color,
     this.depth = -4,
     this.accent,
     this.lightSource,
@@ -203,6 +205,7 @@ class _NeumorphicIndicatorState extends State<NeumorphicIndicator>
           lightSource: widget.style.lightSource ?? theme.lightSource,
           disableDepth: widget.style.disableDepth,
           depth: widget.style.depth,
+          color: widget.style.color,
           shape: NeumorphicShape.flat,
         ),
         child: AnimatedBuilder(
