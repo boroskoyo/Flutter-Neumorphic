@@ -150,12 +150,12 @@ class _NeumorphicSliderState extends State<NeumorphicSlider> {
             widget.onChanged!(newValue);
           }
         },
-        onPanStart: (DragStartDetails details) {
+        onHorizontalDragStart: (DragStartDetails details) {
           if (widget.onChangeStart != null) {
             widget.onChangeStart!(widget.value);
           }
         },
-        onPanEnd: (details) {
+        onHorizontalDragEnd: (details) {
           if (widget.onChangeEnd != null) {
             widget.onChangeEnd!(widget.value);
           }
